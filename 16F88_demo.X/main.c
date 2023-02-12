@@ -5,6 +5,9 @@
  * Created on February 11, 2023, 12:52 PM
  */
 
+// Define the system oscillator frequency that this application will setup
+#define _XTAL_FREQ (31250ul)
+
 // PIC16F88 Configuration Bit Settings
 
 // 'C' source line config statements
