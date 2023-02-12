@@ -34,5 +34,18 @@
 #include <xc.h>
 
 void main(void) {
-    return;
+    /*
+     * Application initialization
+     */
+    TRISBbits.TRISB0 = 0;
+    PORTB = 0;
+    /*
+     * Application process loop
+     */
+    for(;;) {
+        PORTB = 1;
+        __delay_ms(500);
+        PORTB = 0;
+        __delay_ms(500);
+    }
 }
